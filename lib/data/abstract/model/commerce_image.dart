@@ -1,12 +1,15 @@
 class CommerceImage {
-  final int id;
   final String address;
 
   final String altText;
   final bool isLocal;
 
-  CommerceImage(this.id, this.address, this.altText, {this.isLocal = false});
+  CommerceImage(this.address, this.altText, {this.isLocal = false});
+
+  CommerceImage.remote(this.address)
+      : isLocal = false,
+        altText = '';
 
   CommerceImage.placeHolder()
-      : this(0, 'assets/placeholder.png', 'no image', isLocal: true);
+      : this('assets/placeholder.png', 'no image', isLocal: true);
 }

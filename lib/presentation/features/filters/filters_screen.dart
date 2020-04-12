@@ -59,8 +59,9 @@ class _FiltersScreenState extends State<FiltersScreen> {
                         onSelected: (String value) {
                           _onAttributeSelected(attribute, value);
                         },
-                        children: Map.fromEntries(
-                            attribute.options.map((option) => MapEntry(
+                        children: Map.fromEntries(attribute
+                            .optionsWithPriceChanges.keys
+                            .map((option) => MapEntry(
                                 option,
                                 FilterSelectableItem(
                                   text: option,

@@ -39,17 +39,25 @@ class FakeProduct extends Product {
             images: localImages != null && localImages.isNotEmpty
                 ? localImages
                     .map((localAddress) => CommerceImage(
-                        0, localAddress, 'image of $title',
+                        localAddress, 'image of $title',
                         isLocal: true))
                     .toList(growable: false)
                 : [],
             selectableAttributes: productAttributes ??
                 [
                   colors != null && colors.isNotEmpty
-                      ? ProductAttribute(id: 0, name: 'color', options: colors)
+                      ? ProductAttribute(
+                          id: 0,
+                          name: 'color',
+                          optionsWithPriceChanges:
+                              Map.fromIterable(colors, value: (_) => 0.0))
                       : null,
                   sizes != null && sizes.isNotEmpty
-                      ? ProductAttribute(id: 1, name: 'size', options: sizes)
+                      ? ProductAttribute(
+                          id: 1,
+                          name: 'size',
+                          optionsWithPriceChanges:
+                              Map.fromIterable(sizes, value: (_) => 0.0))
                       : null
                 ].where((element) => element != null).toList());
 

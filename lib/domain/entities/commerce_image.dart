@@ -2,7 +2,7 @@ import 'package:openflutterecommerce/data/abstract/model/commerce_image.dart';
 
 class LocalCommerceImage extends CommerceImage {
   static const create_sql = 'CREATE TABLE commerceImage ('
-      'id INTEGER PRIMARY KEY, '
+      'id INTEGER PRIMARY KEY AUTOINCREMENT, '
       'productId INTEGER, '
       'address TEXT, '
       'altText TEXT,'
@@ -10,14 +10,12 @@ class LocalCommerceImage extends CommerceImage {
 
   LocalCommerceImage.fromMap(Map<String, dynamic> map)
       : super(
-          map['id'],
           map['address'],
           map['altText'],
           isLocal: map['isLocal'] > 0,
         );
 
   Map<String, dynamic> toMap(int productId) => {
-        'id': id,
         'productId': productId,
         'address': address,
         'altText': altText,

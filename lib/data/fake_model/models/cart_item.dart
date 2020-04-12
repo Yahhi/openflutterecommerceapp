@@ -6,7 +6,7 @@ class FakeCartItem extends CartItem {
   FakeCartItem(
       {Product product,
       int quantity,
-      Map<ProductAttribute, String> selectedAttributes})
+      Map<ProductAttribute, MapEntry<String, double>> selectedAttributes})
       : super(
             product: product,
             quantity: quantity,

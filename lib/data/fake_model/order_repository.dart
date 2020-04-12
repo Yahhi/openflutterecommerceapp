@@ -16,10 +16,12 @@ class OrderRepository {
     return _myOrders;
   }
 
-  static const sizeAttribute =
-      ProductAttribute(name: 'size', options: ['S', 'M', 'L', 'XL']);
-  static const colorAttribute =
-      ProductAttribute(name: 'color', options: ['grey', 'red', 'yellow']);
+  static const sizeAttribute = ProductAttribute(
+      name: 'size',
+      optionsWithPriceChanges: {'S': 0.0, 'M': 0.0, 'L': 0.0, 'XL': 0.0});
+  static const colorAttribute = ProductAttribute(
+      name: 'color',
+      optionsWithPriceChanges: {'grey': 0.0, 'red': 10.0, 'yellow': 0.0});
 
   final _myOrders = [
     UserOrder(
@@ -87,8 +89,8 @@ class OrderRepository {
             productAttributes: [sizeAttribute, colorAttribute],
           ),
           selectedAttributes: {
-            sizeAttribute: sizeAttribute.options[0],
-            colorAttribute: colorAttribute.options.first
+            sizeAttribute: sizeAttribute.optionsWithPriceChanges.entries.first,
+            colorAttribute: colorAttribute.optionsWithPriceChanges.entries.first
           },
           quantity: 1,
         ),
@@ -104,8 +106,8 @@ class OrderRepository {
             productAttributes: [sizeAttribute, colorAttribute],
           ),
           selectedAttributes: {
-            sizeAttribute: sizeAttribute.options[0],
-            colorAttribute: colorAttribute.options.last
+            sizeAttribute: sizeAttribute.optionsWithPriceChanges.entries.first,
+            colorAttribute: colorAttribute.optionsWithPriceChanges.entries.last
           },
           quantity: 1,
         ),
@@ -122,8 +124,8 @@ class OrderRepository {
             productAttributes: [sizeAttribute, colorAttribute],
           ),
           selectedAttributes: {
-            sizeAttribute: sizeAttribute.options[0],
-            colorAttribute: colorAttribute.options.last
+            sizeAttribute: sizeAttribute.optionsWithPriceChanges.entries.first,
+            colorAttribute: colorAttribute.optionsWithPriceChanges.entries.last
           },
           quantity: 1,
         ),

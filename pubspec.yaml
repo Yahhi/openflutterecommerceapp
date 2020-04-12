@@ -31,7 +31,6 @@ dependencies:
   equatable: ^1.1.0
   flutter_translate: any
   bubble_tab_indicator: any
-  dartz: ^0.8.9
   rxdart: ^0.23.1
   sqflite:
   path:
@@ -42,6 +41,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mockito: ^4.1.1
+  flutter_driver:
+    sdk: flutter
+  bloc_test: ^4.0.0
 
 dependency_overrides:
   pedantic: ^1.9.0
@@ -75,6 +78,7 @@ flutter:
     - assets/i18n/
     - assets/profile/
     - assets/placeholder.png
+    - assets/test_data/taifun_data.json
 
   fonts:
     - family: Metropolis

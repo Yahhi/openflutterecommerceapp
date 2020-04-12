@@ -1,0 +1,263 @@
+{
+    "categories": [
+	{
+	    "id": 1,
+	    "name": "Роллы"
+	},
+	{
+	    "id": 2,
+	    "name": "Пицца"
+	},
+	{
+	    "id": 3,
+	    "name": "Вок"
+	},
+	{
+	    "id": 4,
+	    "name": "Горячее"
+	},
+	{
+	    "id": 5,
+	    "name": "Салаты"
+	},
+	{
+	    "id": 6,
+	    "name": "Комбо"
+	},
+	{
+	    "id": 7,
+	    "name": "Десерты"
+	},
+	{
+	    "id": 8,
+	    "name": "Напитки"
+	},
+	{
+	    "id": 9,
+	    "name": "Прочее"
+	},
+	{
+	    "id": 10,
+	    "name": "Новинки"
+	}
+    ],
+    "products": [
+	{
+	    "id": 1,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/klassika_new-500x500.jpg",
+	    "name": "Классические роллы",
+	    "description": "КЛАССИЧЕСКИЕ РОЛЛЫ В ЛУЧШИХ ТРАДИЦИЯХ ЯПОНСКОЙ КУХНИ",
+	    "price": 119.0,
+	    "final_price": 101.0,
+	    "weight": 105,
+	    "additionals": [
+		{
+		    "ingredient": "Сливочный сыр",
+		    "price": 19.0
+		}
+	    ],
+	    "options": [
+		{"ingredient": "С лососем"},
+		{"ingredient": "С тунцом"},
+		{"ingredient": "С копченой курицей"},
+		{"ingredient": "С креветками"},
+		{"ingredient": "С угрем"},
+		{"ingredient": "С огурцом, кунжутом", "price": -34.0},
+		{"ingredient": "С авокадо, кунжутом", "price": -34.0}
+	    ]
+	},
+	{
+	    "id": 2,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/roninew-500x500.jpg",
+	    "name": "Рони",
+	    "content": ["ЛОСОСЬ", "СЫР СЛИВОЧНЫЙ", "ЧИПСЫ"],
+	    "price": 189.0,
+	    "final_price": 161.0,
+	    "weight": 210
+	},
+	{
+	    "id": 3,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/fudzhi_new-500x500.jpg",
+	    "name": "Фуджи",
+	    "content": ["КРЕВЕТКА", "ЛОСОСЬ", "СЫР СЛИВОЧНЫЙ", "АВОКАДО", "ИКРА ЛЕТУЧЕЙ РЫБЫ", "ЛУК ЗЕЛЁНЫЙ"],
+	    "price": 249.0,
+	    "final_price": 212.0,
+	    "weight": 260
+	},
+	{
+	    "id": 4,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/filadelfija-500x500.jpg",
+	    "name": "Филадельфия",
+	    "content": ["ЛОСОСЬ", "АВОКАДО", "ИКРА ЛЕТУЧЕЙ РЫБЫ", "СЫР СЛИВОЧНЫЙ"],
+	    "price": 209.0,
+	    "final_price": 178.0,
+	    "weight": 230
+	},
+	{
+	    "id": 5,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/london_new-500x500.jpg",
+	    "name": "Лондон",
+	    "content": ["Угорь", "лосось", "сыр сливочный", "соус унаги", "кунжут"],
+	    "price": 219.0,
+	    "final_price": 186.0,
+	    "weight": 240
+	},
+	{
+	    "id": 6,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/raduga_new-500x500.jpg",
+	    "name": "Радуга",
+	    "content": ["Лосось", "тунец", "угорь", "огурец", "сыр сливочный", "кунжут", "соус унаги"],
+	    "price": 219.0,
+	    "final_price": 186.0,
+	    "weight": 230
+	},
+	{
+	    "id": 7,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/drakon_new-500x500.jpg",
+	    "name": "Дракон",
+	    "content": ["Угорь", "лосось", "авокадо", "сыр сливочный", "соус, унаги", "кунжут"],
+	    "price": 259.0,
+	    "final_price": 220.0,
+	    "weight": 250
+	},
+	{
+	    "id": 8,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/italika_-500x500.jpg",
+	    "name": "Италика",
+	    "content": ["Лосось", "бекон из индейки", "огурец", "сыр сливочный"],
+	    "price": 199.0,
+	    "final_price": 169.0,
+	    "weight": 220
+	},
+	{
+	    "id": 9,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/origami_new-500x500.jpg",
+	    "name": "Оригами",
+	    "content": ["Лосось", "краб (имит.)", "огурец", "соус спайс", "кунжут", "икра летучей рыбы"],
+	    "price": 199.0,
+	    "final_price": 169.0,
+	    "weight": 230
+	},
+	{
+	    "id": 10,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/tati_new-500x500.jpg",
+	    "name": "Тати",
+	    "content": ["Лосось", "креветка", "огурец", "икра летучей рыбы", "соус спайс"],
+	    "price": 229.0,
+	    "final_price": 195.0,
+	    "weight": 230
+	},
+	{
+	    "id": 11,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/slivochnyjslososem_new-500x500.jpg",
+	    "name": "Сливочный с лососем",
+	    "content": ["Лосось", "авокадо", "сыр сливочный", "кунжут"],
+	    "price": 209.0,
+	    "final_price": 178.0,
+	    "weight": 220
+	},
+	{
+	    "id": 12,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/rolls/slivochnyjsugrem_new-500x500.jpg",
+	    "name": "Сливочный с угрём",
+	    "content": ["Угорь", "авокадо", "кунжут", "сыр сливочный"],
+	    "price": 209.0,
+	    "final_price": 178.0,
+	    "weight": 220
+	},
+	{
+	    "id": 101,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/pizza/alkapone_new-500x500.jpg",
+	    "name": "АЛЬ-КАПОНЕ",
+	    "content": ["Соус для пиццы", "сыр гауда", "ветчина", "шампиньоны", "томаты", "сыр моцарелла", "базилик"],
+	    "price": 269.0,
+	    "final_price": 229.0,
+	    "weight": 540
+	},
+	{
+	    "id": 101,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/pizza/alkapone_new-500x500.jpg",
+	    "name": "АЛЬ-КАПОНЕ",
+	    "content": ["Соус для пиццы", "сыр гауда", "ветчина", "шампиньоны", "томаты", "сыр моцарелла", "базилик"],
+	    "price": 269.0,
+	    "final_price": 229.0,
+	    "weight": 540
+	},
+	{
+	    "id": 102,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/pizza/cezar_new-500x500.jpg",
+	    "name": "ЦЕЗАРЬ",
+	    "content": ["Соус чесночный", "курица копчёная", "сыр гауда", "томаты", "маслины", "сыр пармезан", "листья салата"],
+	    "price": 289.0,
+	    "final_price": 199.0,
+	    "weight": 560
+	},
+	{
+	    "id": 103,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/pizza/aventador_new-500x500.jpg",
+	    "name": "АВЕНТАДОР",
+	    "content": ["Соус для пиццы", "сыр гауда", "салями", "ветчина", "сосиски", "томаты", "шампиньоны", "сыр моцарелла"],
+	    "price": 319.0,
+	    "final_price": 271.0,
+	    "weight": 620
+	},
+	{
+	    "id": 201,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/wok/plovsovoschami-500x500.jpg",
+	    "name": "ЯПОНСКИЙ ПЛОВ С ОВОЩАМИ",
+	    "description": "Пикантный плов со свежими овощами",
+	    "price": 129.0,
+	    "final_price": 110.0,
+	    "weight": 285
+	},
+	{
+	    "id": 202,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/wok/plovsgribasi-500x500.jpg",
+	    "name": "ЯПОНСКИЙ ПЛОВ С ГРИБАМИ И ЛУКОМ",
+	    "description": "Пикантный плов с жареными шампиньонами и луком",
+	    "price": 129.0,
+	    "final_price": 110.0,
+	    "weight": 235
+	},
+	{
+	    "id": 203,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/wok/plovskuricej-500x500.jpg",
+	    "name": "ЯПОНСКИЙ ПЛОВ С КУРИЦЕЙ И ОВОЩАМИ",
+	    "description": "ПИКАНТНЫЙ ПЛОВ С СОЧНОЙ КУРИЦЕЙ И СВЕЖИМИ ОВОЩАМИ",
+	    "price": 169.0,
+	    "final_price": 144.0,
+	    "weight": 345
+	},
+	{
+	    "id": 204,
+	    "image": "https://тайфун-суши.рф/image/cache/catalog/menu/wok/plovsgovjadinoj-500x500.jpg",
+	    "name": "ЯПОНСКИЙ ПЛОВ С ГОВЯДИНОЙ И ОВОЩАМИ",
+	    "description": "Пикантный плов с сочной говядиной и свежими овощам",
+	    "price": 199.0,
+	    "final_price": 169.0,
+	    "weight": 335
+	}
+	
+    ],
+    "productCategory": [
+	{"productId": 1, "categoryId": 1},
+	{"productId": 2, "categoryId": 1},
+	{"productId": 3, "categoryId": 1},
+	{"productId": 4, "categoryId": 1},
+	{"productId": 5, "categoryId": 1},
+	{"productId": 6, "categoryId": 1},
+	{"productId": 7, "categoryId": 1},
+	{"productId": 8, "categoryId": 1},
+	{"productId": 9, "categoryId": 1},
+	{"productId": 10, "categoryId": 1},
+	{"productId": 11, "categoryId": 1},
+	{"productId": 12, "categoryId": 1},
+	{"productId": 101, "categoryId": 2},
+	{"productId": 102, "categoryId": 2},
+	{"productId": 103, "categoryId": 2},
+	{"productId": 201, "categoryId": 3},
+	{"productId": 202, "categoryId": 3},
+	{"productId": 203, "categoryId": 3},
+	{"productId": 204, "categoryId": 3}
+    ]
+}

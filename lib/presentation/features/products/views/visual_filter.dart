@@ -25,7 +25,7 @@ class VisualFilter extends StatelessWidget {
                 width: 16,
               )
             ] +
-            attribute.key.options
+            attribute.key.optionsWithPriceChanges.keys
                 .map((optionText) => Padding(
                       padding: EdgeInsets.only(right: AppSizes.sidePadding / 2),
                       child: ChoiceChip(

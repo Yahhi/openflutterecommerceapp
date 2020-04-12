@@ -5,10 +5,13 @@ import 'product.dart';
 
 class CartItem extends Equatable {
   final Product product;
-  final Map<ProductAttribute, String> selectedAttributes;
+  final Map<ProductAttribute, MapEntry<String, double>> selectedAttributes;
   final int quantity;
 
-  double get price => quantity * product.price;
+  double get price =>
+      quantity * product.price +
+      selectedAttributes.values
+          .fold(0.0, (sum, mapEntry) => sum += mapEntry.value);
 
   CartItem({
     this.product,

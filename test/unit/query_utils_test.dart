@@ -123,7 +123,13 @@ main() {
                 Category(2): true,
                 Category(3): true
               })),
-          'WHERE (id IN (SELECT productId FROM productCategoryLink WHERE categoryId IN (2, 3))) AND (isFavorite = 1)');
+          'WHERE '
+          '(id IN ('
+          'SELECT productId '
+          'FROM productCategoryLink '
+          'WHERE categoryId IN (2, 3)'
+          ')) '
+          'AND (isFavorite = 1)');
     });
 
     test(

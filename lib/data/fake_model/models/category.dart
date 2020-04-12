@@ -18,6 +18,5 @@ class FakeCategory extends data.Category {
             name: name,
             isCategoryContainer: isCategoryContainer,
             description: description,
-            image:
-                CommerceImage(0, localImage, 'image of $name', isLocal: true));
+            image: CommerceImage(localImage, 'image of $name', isLocal: true));
 }

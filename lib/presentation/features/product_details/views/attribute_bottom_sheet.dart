@@ -54,7 +54,7 @@ class AttributeBottomSheet extends StatelessWidget {
                     shrinkWrap: true,
                     crossAxisCount: 3,
                     childAspectRatio: 100 / 60,
-                    children: productAttribute.options
+                    children: productAttribute.optionsWithPriceChanges.keys
                         .map((String value) => InkWell(
                               onTap: () => {
                                 BlocProvider.of<ProductBloc>(context).add(

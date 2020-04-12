@@ -10,6 +10,7 @@ class Product extends Equatable {
   final String shortDescription;
   final String description;
   final bool isFavorite;
+  final double discountPrice;
   final double price;
   final int discountPercent;
   final int amountAvailable;
@@ -26,6 +27,7 @@ class Product extends Equatable {
     this.shortDescription,
     this.description,
     @required this.price,
+    double finalPrice,
     this.discountPercent = 0,
     this.amountAvailable = 10,
     DateTime created,
@@ -35,7 +37,8 @@ class Product extends Equatable {
     this.properties,
     this.selectableAttributes,
     this.isFavorite = false,
-  }) : created = created ?? DateTime.now();
+  })  : created = created ?? DateTime.now(),
+        discountPrice = finalPrice ?? price * (1 - discountPercent / 100);
 
   Product favorite(bool isFavorite) {
     return Product(id,
@@ -43,6 +46,7 @@ class Product extends Equatable {
         shortDescription: shortDescription,
         description: description,
         price: price,
+        finalPrice: discountPrice,
         discountPercent: discountPercent,
         amountAvailable: amountAvailable,
         created: created,
@@ -75,10 +79,6 @@ class Product extends Equatable {
   bool get stringify => true;
 
   bool get hasRating => averageRating != null;
-
-  double get discountPrice {
-    return (price * (100 - discountPercent) / 100).roundToDouble();
-  }
 
   //TODO place it in extension because it is about UI
   String get specialMark {

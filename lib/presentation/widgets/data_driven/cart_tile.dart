@@ -95,7 +95,7 @@ class _OpenFlutterCartTileState extends State<OpenFlutterCartTile> {
                                         key,
                                         SelectedAttributeView(
                                           productAttribute: key,
-                                          selectedValue: value,
+                                          selectedValue: value.key,
                                         )))
                                     .values
                                     .toList()),
